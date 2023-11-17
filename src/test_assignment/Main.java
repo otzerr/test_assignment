@@ -154,7 +154,7 @@ public class Main {
 										} else {
 											playerWins.put(gamerList.get(0), playerWins.get(gamerList.get(0)) + 1);
 											System.out.println(gamerList.get(0) + " won: " + betWin);
-											if (casinoChanges.get(gamerList.get(0)) == null) {
+											if (casinoChanges.get(gamerList.get(0)) == null) { // Handling low bet winnings
 												if (BetBigger == true) {
 													casinoChanges.put(gamerList.get(0), +casinoPayout);
 												} else {
